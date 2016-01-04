@@ -22,7 +22,7 @@ var webApp = angular.module('webApp', ['ngRoute']);
                 templateUrl : 'pages/contact.html',
                 controller  : 'contactController'
             });
-            
+
             // use the HTML5 History API
         $locationProvider.html5Mode(true);
 });
@@ -30,13 +30,13 @@ var webApp = angular.module('webApp', ['ngRoute']);
     // create the controller and inject Angular's $scope
     webApp.controller('mainController', function($scope) {
         // create a message to display in our view
-        $scope.message = 'Everyone come and see how good I look!';
+        $scope.message = 'I am an aspiring web developer lol';
     });
 
     webApp.controller('aboutController', function($scope) {
-        $scope.message = 'Look! I am an about page.';
+        $scope.message = 'Experience stuff goes here';
     });
 
     webApp.controller('contactController', function($scope) {
-        $scope.message = 'Contact us! JK. This is just a demo.';
+        $scope.message = 'Contact info goes here';
     });
