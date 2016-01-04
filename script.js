@@ -1,5 +1,5 @@
 //create module
-var webApp = angular.module('webApp', ['ngRoute']);
+var webApp = angular.module('webApp', ['ngRoute', 'ngAnimate']);
 
 	// configure our routes
     webApp.config(function($routeProvider, $locationProvider) {
@@ -30,13 +30,16 @@ var webApp = angular.module('webApp', ['ngRoute']);
     // create the controller and inject Angular's $scope
     webApp.controller('mainController', function($scope) {
         // create a message to display in our view
+        $scope.pageClass = 'page-home';
         $scope.message = 'I am an aspiring web developer lol';
     });
 
     webApp.controller('aboutController', function($scope) {
+    	$scope.pageClass = 'page-about';
         $scope.message = 'Experience stuff goes here';
     });
 
     webApp.controller('contactController', function($scope) {
+    	$scope.pageClass = 'page-contact';
         $scope.message = 'Contact info goes here';
     });
