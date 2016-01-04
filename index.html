@@ -7,11 +7,15 @@
       <!-- load bootstrap and fontawesome via CDN -->
       <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
       <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
-
+      
+      <link rel="stylesheet" href="style.css">
       <!-- SPELLS -->
       <!-- load angular and angular route via CDN -->
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
-          <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+      <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-route.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.js"></script>
       <script src="script.js"></script>
     </head>
     <body ng-controller="mainController">
@@ -37,7 +41,7 @@
         <div id="main">
             <!-- angular templating -->
             <!-- this is where content will be injected -->
-            <div ng-view></div>
+            <div class="page {{ pageClass }}" ng-view></div>
         </div>
 
     </body>
