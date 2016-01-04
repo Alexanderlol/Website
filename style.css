@@ -14,9 +14,9 @@
 
 /* PAGES (specific colors for each page)
 ============================================================================= */
-.page-home      { background:#00D0BC; color:#00907c; }
-.page-about     { background:#E59400; color:#a55400; }
-.page-contact   { background:#ffa6bb; color:#9e0000; }
+.page-home      { background:#00ffef; color:#000000; }
+.page-about     { background:#00ffef; color:#000000; }
+.page-contact   { background:#00ffef; color:#000000; }
 
 /* ANIMATIONS
 ============================================================================= */
@@ -59,11 +59,12 @@
     to      { transform: translateY(0); }
 }
 
+
 .ng-enter           { animation: scaleUp 0.5s both ease-in; z-index: 8888; }
 .ng-leave           { animation: slideOutLeft 0.5s both ease-in; z-index: 9999; }
 
 .ng-enter       { z-index: 8888; }
-    .ng-leave       { z-index: 9999; }
+.ng-leave       { z-index: 9999; }
 
     /* page specific animations ------------------------ */
 
