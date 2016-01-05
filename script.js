@@ -1,6 +1,8 @@
 //create module
 var webApp = angular.module('webApp', ['ngRoute', 'ngAnimate']);
 
+
+
 	// configure our routes
     webApp.config(function($routeProvider, $locationProvider) {
         $routeProvider
@@ -28,7 +30,11 @@ var webApp = angular.module('webApp', ['ngRoute', 'ngAnimate']);
 
             // use the HTML5 History API
         $locationProvider.html5Mode(true);
+
+
 });
+
+
 
     // create the controller and inject Angular's $scope
     webApp.controller('mainController', function($scope) {
@@ -38,6 +44,9 @@ var webApp = angular.module('webApp', ['ngRoute', 'ngAnimate']);
 
     webApp.controller('aboutController', function($scope) {
     	$scope.pageClass = 'page-about';
+        //default states for about-buttons
+        $scope.Dev = false;
+        $scope.Work = false;
     });
 
     webApp.controller('portfolioController', function($scope) {
