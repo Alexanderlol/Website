@@ -58,8 +58,8 @@
 .ng-enter           { animation: slideInLeft 0.5s both ease-in; z-index: 8888; }
 .ng-leave           { animation: slideOutRight 0.5s both ease-in; z-index: 9999; }
 
-.ng-enter       { z-index: 8888; }
-.ng-leave       { z-index: 9999; }
+.ng-enter       { z-index: -8888; }
+.ng-leave       { z-index: -9999; }
 
 
     /* page specific animations ------------------------ */
