@@ -21,10 +21,10 @@
 
 /* PAGES (specific colors for each page)
 ============================================================================= */
-.page-home      { background:#75a3a3; color:#000000; }
-.page-about     { background:#b3cccc; color:#000000; }
-.page-portfolio     { background:#b3cccc; color:#000000; }
-.page-contact   { background:#e0ebeb; color:#000000; }
+.page-home      { background:#d6d6c2; color:#000000; }
+.page-about     { background:#d6d6c2; color:#000000; }
+.page-portfolio { background:#d6d6c2; color:#000000; }
+.page-contact   { background:#d6d6c2; color:#000000; }
 
 /* ANIMATIONS
 ============================================================================= */
@@ -34,13 +34,23 @@
 
 /* slide in from the bottom */
 @keyframes slideOutRight {
-    to      { transform: translateX(100%); }
+    to      { transform: translateX(100%);}
 }
 
 
 /* slide in from the right */
 @keyframes slideInLeft {
-    from    { transform:translateX(-100%); }
+    from    { transform:translateX(-100%);}
+}
+
+@keyframes fadeOut {
+  from { opacity:1; }
+  to { opacity:0; }
+}
+
+@keyframes fadeIn {
+  from { opacity:0; }
+  to { opacity:1; }
 }
 
 
@@ -50,6 +60,7 @@
 
 .ng-enter       { z-index: 8888; }
 .ng-leave       { z-index: 9999; }
+
 
     /* page specific animations ------------------------ */
 
@@ -68,3 +79,9 @@
     /* contact ---------------------- */
     .page-contact.ng-enter      { animation: slideInLeft 0.5s both ease-in; }
     .page-contact.ng-leave      { animation:slideOutRight 0.5s both ease-in; }
+
+/* when hiding*/
+.ng-hide-add         { animation: fadeOut 0.5s both ease-in; }
+
+/* when showing*/
+.ng-hide-remove      { animation: fadeIn 0.5s both ease-in; }
