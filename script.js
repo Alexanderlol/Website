@@ -16,7 +16,10 @@ var webApp = angular.module('webApp', ['ngRoute', 'ngAnimate']);
                 templateUrl : 'pages/about.html',
                 controller  : 'aboutController'
             })
-
+            .when('/portfolio', {
+                templateUrl : 'pages/portfolio.html',
+                controller  : 'portfolioController'
+            })
             // route for the contact page
             .when('/contact', {
                 templateUrl : 'pages/contact.html',
@@ -31,15 +34,16 @@ var webApp = angular.module('webApp', ['ngRoute', 'ngAnimate']);
     webApp.controller('mainController', function($scope) {
         // create a message to display in our view
         $scope.pageClass = 'page-home';
-        $scope.message = 'I am an aspiring web developer lol';
     });
 
     webApp.controller('aboutController', function($scope) {
     	$scope.pageClass = 'page-about';
-        $scope.message = 'Experience stuff goes here';
+    });
+
+    webApp.controller('portfolioController', function($scope) {
+        $scope.pageClass = 'page-portfolio';
     });
 
     webApp.controller('contactController', function($scope) {
     	$scope.pageClass = 'page-contact';
-        $scope.message = 'Contact info goes here';
     });

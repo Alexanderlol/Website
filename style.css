@@ -1,12 +1,19 @@
 /* make our pages be full width and full height */
 /* positioned absolutely so that the pages can overlap each other as they enter and leave */
 .page        {
-    bottom:0; 
-    padding-top:200px;
-    position:absolute; 
+    bottom:0;
+    padding-top:100px;
+    position:absolute;
     text-align:center;
-    top:0;  
-    width:100%; 
+    top:0;
+    width:100%;
+}
+
+.jumbotron_Exp{
+  background-image:url('http://i.imgur.com/C3L8rAt.jpg');
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .page h1    { font-size:60px; }
@@ -16,6 +23,7 @@
 ============================================================================= */
 .page-home      { background:#75a3a3; color:#000000; }
 .page-about     { background:#b3cccc; color:#000000; }
+.page-portfolio     { background:#b3cccc; color:#000000; }
 .page-contact   { background:#e0ebeb; color:#000000; }
 
 /* ANIMATIONS
@@ -52,6 +60,10 @@
     /* about ------------------------ */
     .page-about.ng-enter        { animation:slideInLeft 0.5s both ease-in; }
     .page-about.ng-leave        { animation:slideOutRight 0.5s both ease-in; }
+
+    /* about ------------------------ */
+    .page-portfolio.ng-enter        { animation:slideInLeft 0.5s both ease-in; }
+    .page-portfolio.ng-leave        { animation:slideOutRight 0.5s both ease-in; }
 
     /* contact ---------------------- */
     .page-contact.ng-enter      { animation: slideInLeft 0.5s both ease-in; }
