@@ -9,6 +9,22 @@
     width:100%;
 }
 
+.nav-center{
+    border:0px solid #ccc;
+    border-width:0px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.nav-center li{
+    display:inline;
+}
+.nav-center a{
+    display:inline-block;
+    padding:10px;
+}
+
 .jumbotron_Exp{
   background-image:url('http://i.imgur.com/C3L8rAt.jpg');
   height: 300px;
