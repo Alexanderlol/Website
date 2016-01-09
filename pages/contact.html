@@ -1,5 +1,12 @@
-
-	<ul class ="pull-left">
-		<li><h1>Contact info</h1></li>
-		<li><P>afeltra.alex@gmail.com</P></li>
-	</ul>
+<div flex layout="row" layout-align="center center">
+    <div flex-sm="100" flex-gt-sm="90" flex-gt-md="70" flex-gt-lg="50" class="md-whiteframe-z2">
+            <div flex-sm="100" flex-gt-sm="80" layout-sm="column">
+                <form name="contactForm" data-ng-submit="sendMail()">
+                    Name: <input type="text" data-ng-model="contactName">
+                    Email: <input type="email" data-ng-model="contactEmail">
+                    Message: <textarea ng-model="contactMsg" columns="1" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+    </div>
+</div>
