@@ -5,8 +5,8 @@ var app = express();
 var smtpTransport = nodemailer.createTransport('SMTP', {
   service: 'Gmail',
   auth: {
-    user: 'YourEmailAddressHere',
-    pass: 'yourGmailPassHere'
+    user: 'appEmailAddress',
+    pass: 'appEmailPassword'
   }
 });
 
@@ -17,6 +17,7 @@ app.get('/', function (req, res) {
 app.get('/send', function (req, res) {
   var mailOptions = {
     to: req.query.to,
+    from: req.query.from,
     subject: req.query.subject,
     text: req.query.text
   };

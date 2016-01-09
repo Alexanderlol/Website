@@ -1,24 +1,42 @@
 <html>
 <head>
   <title>Contact</title>
+
+  <style>
+    #blankRow
+    {
+      height: 10px;
+    }
+    input
+    {
+      min-width: 425px;
+    }
+
+  </style>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script>
   // <![CDATA[
     $(document).ready(function () {
-      var sentBy, to, subject, text;
+      var fromName, fromEmail, from, to, subject, text;
       $('#send_email').click(function () {
-        to = $('#to').val();
+        fromName = $('#senderName').val();
+        fromEmail = $('#sender').val();
+
+        to = 'pengelly.mat@gmail.com';
+        from = fromName + '<placeholder@placeholder.com>';
         subject = $('#subject').val();
-        text = $('#content').val();
-        sentBy = 'DummySender';
+
+        text = 'This message was sent by: ' + fromEmail +
+          ' on ' + new Date() + '\n' +
+          'Message Contents: ' + $('#content').val();
 
         $('#message').text('Sending E-mail...Please wait');
         $.get('http://localhost:3000/send',
-          { to: to, subject: subject, text: text }, function (data) {
+          { to: to, from: from, subject: subject, text: text }, function (data) {
             if (data === 'sent') {
               $('#message').empty()
-                .html('Email is been sent at ' + to +
-                'from: ' + sentBy + '. Please check inbox !');
+                .html('Email has been sent to ' + to +
+                ' from: ' + from + '. Please check inbox !');
             }
           });
       });
@@ -28,16 +46,43 @@
 <body>
   <div id="container">
 
-    <h1>Mailer In Node.JS</h1>
+    <table>
+      <thead>
+        <h1>Want to drop me an email?</h1>
+      </thead>
+      <tbody>
+      <tr>
+        <td>
+          <input id="senderName" type="text" placeholder="Enter your name if you want me to know it."/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input id="sender" type="text"
+            placeholder="Enter your email address, so I can respond to your message personally." />
+        </td>
+      </tr>
+      <tr id="blankRow">
+      </tr>
+      <tr>
+        <td>
+          <input id="subject" type="text" placeholder="Write Email Subject" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <textarea id="content" cols="40" rows="5" placeholder="Enter Message To Send."></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button id="send_email">Send Email</button>
+          <span id="message"></span>
+        </td>
+      </tr>
+      <tbody>
 
-    <input id="to" type="text"
-      placeholder="Enter E-mail address that you want to send the email to." />
-    <input id="subject" type="text" placeholder="Write Email Subject" />
-
-    <textarea id="content" cols="40" rows="5" placeholder="Enter Message To Send."></textarea>
-    <button id="send_email">Send Email</button>
-    <span id="message"></span>
-
+    <table>
   </div>
 </body>
 </html>
