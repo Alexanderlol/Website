@@ -37,10 +37,10 @@
 
 /* PAGES (specific colors for each page)
 ============================================================================= */
-.page-home      { background:#d6d6c2; color:#000000; }
-.page-about     { background:#d6d6c2; color:#000000; }
-.page-portfolio { background:#d6d6c2; color:#000000; }
-.page-contact   { background:#d6d6c2; color:#000000; }
+.page-home      { background:#FFFFFF; color:#000000; }
+.page-about     { background:#FFFFFF; color:#000000; }
+.page-portfolio { background:#FFFFFF; color:#000000; }
+.page-contact   { background:#FFFFFF; color:#000000; }
 
 /* ANIMATIONS
 ============================================================================= */
