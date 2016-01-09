@@ -6,12 +6,12 @@ var smtpTransport = nodemailer.createTransport("SMTP",{
 service: "Gmail",
 auth: {
 user: "afeltra.alex@gmail.com",
-pass: "MattPengellyIsAFaggot"
+pass: "pengellysAFaget"
 }
 });
 
 app.get('/',function(req,res){
-res.sendfile('index.html');
+res.sendfile('contact.html');
 });
 
 app.get('/send',function(req,res){
@@ -32,6 +32,6 @@ app.get('/send',function(req,res){
 	});
 });
 
-app.listen(8080,function(){
+app.listen(3000,function(){
 console.log("Express Started on Port 3000");
 });
