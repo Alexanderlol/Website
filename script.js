@@ -53,6 +53,8 @@ var webApp = angular.module('webApp', ['ngRoute', 'ngAnimate']);
         $scope.pageClass = 'page-portfolio';
     });
 
-    webApp.controller('contactController', function($scope) {
+    webApp.controller('contactController', function($scope, $http) {
     	$scope.pageClass = 'page-contact';
     });
+
+
