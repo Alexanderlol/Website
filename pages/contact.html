@@ -22,7 +22,7 @@
         fromName = $('#senderName').val();
         fromEmail = $('#sender').val();
 
-        to = 'pengelly.mat@gmail.com';
+        to = 'afeltra.alex@gmail.com';
         from = fromName + '<placeholder@placeholder.com>';
         subject = $('#subject').val();
 
@@ -44,7 +44,7 @@
   </script>
 </head>
 <body>
-  <div id="container">
+<!--   <div id="container">
 
     <table>
       <thead>
@@ -83,6 +83,29 @@
       <tbody>
 
     <table>
-  </div>
+  </div> -->
+
+<form class="form">
+    <p class="name">
+        <input type="text" name="name" id="senderName" />
+        <label for="name">Name</label>
+    </p>
+    <p class="email">
+        <input type="text" name="email" id="sender" />
+        <label for="email">E-mail</label>
+    </p>
+    <p class="subject">
+        <input type="text" name="subject" id="subject" />
+        <label for="subject">Subject</label>
+    </p>
+    <p class="text">
+        <textarea name="text" id="content"></textarea>
+    </p>
+    <p class="submit">
+        <input type="submit" value="Send" id="send_email" />
+    </p>
+    <span id="message"></span>
+</form>
+
 </body>
 </html>
