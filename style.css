@@ -34,11 +34,13 @@
 
 @font-face{
   font-family: mFont;
-  src: url("fonts/Milano_regular.ttf");
+  src: url("fonts/Thin_Line_Font.otf");
 }
 
 .logoFont{
   font-family: mFont;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 /* PAGES (specific colors for each page)
