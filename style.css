@@ -2,7 +2,7 @@
 /* positioned absolutely so that the pages can overlap each other as they enter and leave */
 .page        {
     bottom:0;
-    padding-top:100px;
+    padding-top:50px;
     position:absolute;
     text-align:center;
     top:0;
@@ -23,6 +23,14 @@
 .nav-center a{
     display:inline-block;
     padding:10px;
+}
+
+.jumbotron_Home{
+  background-image:url("/images/homeSplash.jpg");
+  height: 480px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
 }
 
 .jumbotron_Exp{
