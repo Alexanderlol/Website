@@ -33,11 +33,21 @@
   color: white;
 }
 
+.text_left{
+    text-align: left;
+}
+
+.text_center{
+    text-align: center;
+}
+
 .jumbotron_Exp{
   background-image:url('http://i.imgur.com/C3L8rAt.jpg');
   height: 300px;
   background-repeat: no-repeat;
   background-size: cover;
+
+  -webkit-filter: blur(10px);
 }
 
 @font-face{
