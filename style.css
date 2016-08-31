@@ -37,7 +37,7 @@
     text-align: left;
 }
 
-.text_center{
+.text_leftcenter{
     text-align: center;
 }
 
@@ -46,8 +46,10 @@
   height: 300px;
   background-repeat: no-repeat;
   background-size: cover;
+}
 
-  -webkit-filter: blur(10px);
+.iconcolorgrey{
+    color: #333;
 }
 
 @font-face{
@@ -76,13 +78,13 @@
 
 /* slide in from the bottom */
 @keyframes slideOutRight {
-    to      { transform: translateX(100%);}
+    to      { transform: translateX(-100%);}
 }
 
 
 /* slide in from the right */
 @keyframes slideInLeft {
-    from    { transform:translateX(-100%);}
+    from    { transform:translateX(100%);}
 }
 
 @keyframes fadeOut {
