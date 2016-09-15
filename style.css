@@ -31,6 +31,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  font-family: mFont;
+  font-weight:  bold;
+  /*-webkit-text-stroke: 0.001px black;*/
+  font-size: 300%;
 }
 
 .text_left{
