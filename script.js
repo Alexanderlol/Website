@@ -40,16 +40,16 @@ var webApp = angular.module('webApp', ['ngRoute', 'ngAnimate']);
     webApp.controller('mainController', function($scope) {
         // create a message to display in our view
         $scope.pageClass = 'page-home';
-        $scope.updates = ['This is update 1', 'This is the second update!'];
+        $scope.updates = ['<br><br>Hi, my name is Alex <br> Welcome to my Website!'];
         $(function(){
             $(".update-box p").typed({
               strings:$scope.updates,
-              typeSpeed: 40,
-              loop: true,
+              typeSpeed: 60,
+              loop: false,
               backDelay: 1500,
-              contentType: 'text',
+              contentType: 'html',
               loopCount: false,
-              cursorChar: " |"
+              cursorChar: " "
             });
           });
     });
