@@ -3,7 +3,7 @@ var webApp = angular.module('webApp', ['ngRoute', 'ngAnimate']);
 
 
 
-	// configure our routes
+    // configure our routes
     webApp.config(function($routeProvider, $locationProvider) {
         $routeProvider
 
@@ -55,7 +55,7 @@ var webApp = angular.module('webApp', ['ngRoute', 'ngAnimate']);
     });
 
     webApp.controller('aboutController', function($scope) {
-    	$scope.pageClass = 'page-about';
+        $scope.pageClass = 'page-about';
         //default states for about-buttons
         $scope.Dev = false;
         $scope.Work = false;
@@ -66,7 +66,5 @@ var webApp = angular.module('webApp', ['ngRoute', 'ngAnimate']);
     });
 
     webApp.controller('contactController', function($scope, $http) {
-    	$scope.pageClass = 'page-contact';
+        $scope.pageClass = 'page-contact';
     });
-
-
