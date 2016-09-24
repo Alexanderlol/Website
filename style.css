@@ -27,9 +27,9 @@
 
 .jumbotron_home{
   background-image:url("/images/homeSplash.jpg");
-  height: 480px;
+  height: 380px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   color: white;
   font-family: mFont;
   font-weight:  bold;
@@ -63,6 +63,18 @@
   background-image:url('/images/expjumbo.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}
+
+.portrait{
+  width: 40%;
+  height: 40%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+  transform: rotate(180deg);
+  border-radius: 25px;
+
 }
 
 .jumbotron_Contact{
