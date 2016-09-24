@@ -50,8 +50,11 @@
   /*height: 300px;*/
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: mFont;
-  font-size: 100px;
+  font-family: "Helvetica", sans-serifs;
+  font-size: 12px;
+  text-align: left;
+  padding-right: 300px;
+  padding-left: 300px;
 }
 
 .jumbotron_Contact{
@@ -67,6 +70,7 @@
     color: #333;
 }
 
+
 @font-face{
   font-family: mFont;
   src: url("fonts/Thin_Line_Font.otf");
@@ -81,6 +85,7 @@
   font-family: mFont;
   font-weight: bold;
   font-size: 50px;
+  text-align: center;
 }
 
 /* PAGES (specific colors for each page)
@@ -145,10 +150,10 @@
     .page-contact.ng-leave      { animation:slideOutRight 0.5s both ease-in; }
 
 /* when hiding*/
-.ng-hide-add         { animation: fadeOut 0.5s both ease-in; }
+/*.ng-hide-add         { animation: fadeOut 0.5s both ease-in; }
 
-/* when showing*/
-.ng-hide-remove      { animation: fadeIn 0.5s both ease-in; }
+ when showing
+.ng-hide-remove      { animation: fadeIn 0.5s both ease-in; }*/
 
 /*contact form style*/
 input, textarea {
