@@ -4,5 +4,8 @@
   "dependencies": {
     "express": "~4.5.1",
     "nodemailer": "^0.7.1"
-}
+  },
+  "devDependencies": {
+    "connect-modrewrite": "^0.9.0"
+  }
 }

@@ -28,8 +28,10 @@ var webApp = angular.module('webApp', ['ngRoute', 'ngAnimate']);
                 controller  : 'contactController'
             });
 
-            // use the HTML5 History API
-        $locationProvider.html5Mode(true);
+
+
+            // use the HTML5 History API    
+            $locationProvider.html5Mode(true);
 
 
 });
@@ -39,7 +41,7 @@ var webApp = angular.module('webApp', ['ngRoute', 'ngAnimate']);
     // create the controller and inject Angular's $scope
     webApp.controller('mainController', function($scope) {
         // create a message to display in our view
-        $scope.pageClass = 'page-home';
+        $scope.pageClass = '/page-home';
         $scope.updates = ['<br><br>Hi, my name is Alex <br> Welcome to my Website !'];
         $(function(){
             $(".update-box p").typed({
@@ -52,19 +54,23 @@ var webApp = angular.module('webApp', ['ngRoute', 'ngAnimate']);
               cursorChar: "|"
             });
           });
+        
     });
 
-    webApp.controller('aboutController', function($scope) {
-        $scope.pageClass = 'page-about';
+    webApp.controller('aboutController',function($scope) {
+        $scope.pageClass = '/page-about';
         //default states for about-buttons
         $scope.Dev = false;
         $scope.Work = false;
     });
+    app.get('*', routes.index);
 
     webApp.controller('portfolioController', function($scope) {
-        $scope.pageClass = 'page-portfolio';
+        $scope.pageClass = '/page-portfolio';
     });
 
     webApp.controller('contactController', function($scope, $http) {
-        $scope.pageClass = 'page-contact';
+        $scope.pageClass = '/page-contact';
     });
+
+    app.get('*', routes.index);
