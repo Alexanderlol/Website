@@ -109,7 +109,8 @@
 
 .portrait{
   width: 40%;
-  height: 40%;/*
+  height: 40%;
+  image-orientation: from-image;/*
   background-repeat: no-repeat;
   background-size: contain;*/
   /*-ms-transform: rotate(180deg);*/ /* IE 9 */
