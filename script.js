@@ -63,7 +63,6 @@ var webApp = angular.module('webApp', ['ngRoute', 'ngAnimate']);
         $scope.Dev = false;
         $scope.Work = false;
     });
-    app.get('*', routes.index);
 
     webApp.controller('portfolioController', function($scope) {
         $scope.pageClass = '/page-portfolio';
@@ -72,5 +71,3 @@ var webApp = angular.module('webApp', ['ngRoute', 'ngAnimate']);
     webApp.controller('contactController', function($scope, $http) {
         $scope.pageClass = '/page-contact';
     });
-
-    app.get('*', routes.index);
