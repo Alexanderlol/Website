@@ -47,9 +47,11 @@ var webApp = angular.module('webApp', ['ngRoute', 'ngAnimate']);
               strings:$scope.updates,
               typeSpeed: 60,
               loop: false,
-              //backDelay: 1500,
+             // backSpeed: 50,
+             // backDelay: 300,
               contentType: 'html',
               loopCount: false,
+              showCursor: false,
               cursorChar: "|"
             });
           });
