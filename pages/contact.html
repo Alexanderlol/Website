@@ -45,39 +45,40 @@
   </script>
 </head>
 <body>
-<div class="col-md-6">
-  <div class="jumbotron_Contact">
-    <p>Contact Info</p>
-    <h4>Alexander Afeltra</h4>
-    <h4>afeltra.alex@gmail.com</h4>
-    <h4>613-513-5239</h4>
+<div class="container text-center">
+  <div class="col-md-6 col-md-offset-3">
+    <div class="jumbotron_Contact">
+      <p class="text-center">Contact Info</p>
+      <h4 class="text-center">Alexander Afeltra</h4>
+      <h4 class="text-center">afeltra.alex@gmail.com</h4>
+      <h4 class="text-center">613-513-5239</h4>
+      <p class="text-center">Leave me a message!</p>
+    </div>
+    <div class="well">
+      <p style="color: red;">This contact form is currently broken :(</p>
+      <form class="form">
+          <p class="name">
+              <input type="text" name="name" id="senderName" placeholder="Name" />
+          </p>
+          <p class="email">
+              <input type="text" name="email" id="sender" placeholder="Email" />
+          </p>
+          <p class="subject">
+              <input type="text" name="subject" id="subject" placeholder="Subject" />
+          </p>
+          <p class="text">
+              <textarea name="text" id="content"></textarea>
+          </p>
+          <p class="submit">
+              <input type="submit" value="Send" id="send_email" />
+          </p>
+          <span id="message"></span>
+      </form>
+    </div>
   </div>
 </div>
 
-<div class="col-md-6">
-  <div class="jumbotron_Contact">
-    <p>Leave me a message!</p>
-    <form class="form">
-        <p class="name">
-            <input type="text" name="name" id="senderName" placeholder="Name" />
 
-        </p>
-        <p class="email">
-            <input type="text" name="email" id="sender" placeholder="Email" />
-        </p>
-        <p class="subject">
-            <input type="text" name="subject" id="subject" placeholder="Subject" />
-        </p>
-        <p class="text">
-            <textarea name="text" id="content"></textarea>
-        </p>
-        <p class="submit">
-            <input type="submit" value="Send" id="send_email" />
-        </p>
-        <span id="message"></span>
-    </form>
-  </div>
-</div>
 
 </body>
 </html>

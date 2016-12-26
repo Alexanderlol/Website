@@ -12,11 +12,15 @@ var webApp = angular.module('webApp', ['ngRoute', 'ngAnimate']);
                 templateUrl : 'pages/home.html',
                 controller  : 'mainController'
             })
-
             // route for the about page
             .when('/about', {
                 templateUrl : 'pages/about.html',
                 controller  : 'aboutController'
+            })
+            // route for the experience page
+            .when('/experience', {
+                templateUrl : 'pages/experience.html',
+                controller  : 'experienceController'
             })
             .when('/portfolio', {
                 templateUrl : 'pages/portfolio.html',
@@ -60,6 +64,24 @@ var webApp = angular.module('webApp', ['ngRoute', 'ngAnimate']);
 
     webApp.controller('aboutController',function($scope) {
         $scope.pageClass = '/page-about';
+        $scope.updates = ['<br>Who I am and what I do'];
+        $(function(){
+            $(".update-box p").typed({
+              strings:$scope.updates,
+              typeSpeed: 60,
+              loop: false,
+             // backSpeed: 50,
+             // backDelay: 300,
+              contentType: 'html',
+              loopCount: false,
+              showCursor: false,
+              cursorChar: "|"
+            });
+          });
+    });
+
+    webApp.controller('experienceController',function($scope) {
+        $scope.pageClass = '/page-experience';
         //default states for about-buttons
         $scope.Dev = false;
         $scope.Work = false;
