@@ -12,11 +12,6 @@ var webApp = angular.module('webApp', ['ngRoute', 'ngAnimate']);
                 templateUrl : 'pages/home.html',
                 controller  : 'mainController'
             })
-            // route for the about page
-            .when('/about', {
-                templateUrl : 'pages/about.html',
-                controller  : 'aboutController'
-            })
             // route for the experience page
             .when('/experience', {
                 templateUrl : 'pages/experience.html',
@@ -45,7 +40,7 @@ var webApp = angular.module('webApp', ['ngRoute', 'ngAnimate']);
     webApp.controller('mainController', function($scope) {
         // create a message to display in our view
         $scope.pageClass = '/page-home';
-        $scope.updates = ['<br><br>Hi, my name is Alex <br> Welcome to my Website !'];
+        $scope.updates = ['<br><br>I like to learn, develop, and progress<br>Find out who I am and what Im about'];
         $(function(){
             $(".update-box p").typed({
               strings:$scope.updates,
@@ -60,24 +55,6 @@ var webApp = angular.module('webApp', ['ngRoute', 'ngAnimate']);
             });
           });
         
-    });
-
-    webApp.controller('aboutController',function($scope) {
-        $scope.pageClass = '/page-about';
-        $scope.updates = ['<br>Who I am and what I do'];
-        $(function(){
-            $(".update-box p").typed({
-              strings:$scope.updates,
-              typeSpeed: 60,
-              loop: false,
-             // backSpeed: 50,
-             // backDelay: 300,
-              contentType: 'html',
-              loopCount: false,
-              showCursor: false,
-              cursorChar: "|"
-            });
-          });
     });
 
     webApp.controller('experienceController',function($scope) {

@@ -65,15 +65,12 @@
     transition: 0s
 }
 
-
-.jumbotron_homepic{
+.jumbotron_home{
   height: 480px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-image:url("/images/homeSplash.jpg");
-}
-
-.jumbotron_home{
+  /*background-image:url("/images/homeSplash.jpg");*/
+  background-image:url("/images/aboutjumbo.jpg");
   /*-webkit-text-stroke: 0.001px black;*/
   color: white;
   font-family: mFont;
