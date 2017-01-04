@@ -40,7 +40,7 @@ var webApp = angular.module('webApp', ['ngRoute', 'ngAnimate']);
     webApp.controller('mainController', function($scope) {
         // create a message to display in our view
         $scope.pageClass = '/page-home';
-        $scope.updates = ['<br><br>I like to learn, develop, and progress<br>Find out who I am and what Im about'];
+        $scope.updates = ['<br><br>Hi, my name is Alex<br>I like to learn, develop, and progress<br>Discover who I am'];
         $(function(){
             $(".update-box p").typed({
               strings:$scope.updates,
