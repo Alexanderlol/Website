@@ -40,11 +40,11 @@ var webApp = angular.module('webApp', ['ngRoute', 'ngAnimate']);
     webApp.controller('mainController', function($scope) {
         // create a message to display in our view
         $scope.pageClass = '/page-home';
-        $scope.updates = ['<br><br>Hi, my name is Alex<br>I like to learn, develop, and progress<br>Discover who I am'];
+        $scope.updates = ['<br><br>Hi, my name is Alex<br>I like to learn, progress, and develop<br>Discover who I am'];
         $(function(){
             $(".update-box p").typed({
               strings:$scope.updates,
-              typeSpeed: 60,
+              typeSpeed: 58,
               loop: false,
              // backSpeed: 50,
              // backDelay: 300,
@@ -59,6 +59,20 @@ var webApp = angular.module('webApp', ['ngRoute', 'ngAnimate']);
 
     webApp.controller('experienceController',function($scope) {
         $scope.pageClass = '/page-experience';
+        $scope.updates = ['<br><br><br><br><br>My Skills and Experience...'];
+        $(function(){
+            $(".update-box p").typed({
+              strings:$scope.updates,
+              typeSpeed: 60,
+              loop: false,
+             // backSpeed: 50,
+             // backDelay: 300,
+              contentType: 'html',
+              loopCount: false,
+              showCursor: false,
+              cursorChar: "|"
+            });
+          });
         //default states for about-buttons
         $scope.Dev = false;
         $scope.Work = false;
