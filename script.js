@@ -44,7 +44,7 @@ var webApp = angular.module('webApp', ['ngRoute', 'ngAnimate']);
         $(function(){
             $(".update-box p").typed({
               strings:$scope.updates,
-              typeSpeed: 58,
+              typeSpeed: 50,
               loop: false,
              // backSpeed: 50,
              // backDelay: 300,
@@ -53,8 +53,7 @@ var webApp = angular.module('webApp', ['ngRoute', 'ngAnimate']);
               showCursor: false,
               cursorChar: "|"
             });
-          });
-        
+          });  
     });
 
     webApp.controller('experienceController',function($scope) {
